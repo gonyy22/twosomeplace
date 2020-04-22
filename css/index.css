@@ -174,16 +174,16 @@ a{
 		height: 40px;
 		float:left;
 		text-align: center;
-		margin-top: 12px;
+		padding: 12px 0 9px;
 		border-right: 1px solid #958C88;
 	}
 	.newproduct_event{
 		display: inline-block;
 		width:50%;
-		height: 50px;
+		height: 40px;
 		float:left;
 		text-align: center;
-		margin-top: 12px;
+		padding: 12px 0 9px;
 	}
 	.event_menu_en{
 		font-size: 12px;
