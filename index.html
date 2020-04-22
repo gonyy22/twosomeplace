@@ -4,18 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width==device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
   <title></title>
 </head>
 <body>
   <header class="header_wrap">
     <a href="#" class="location_link"><span class="blind">위치</span></a>
     <a href="#" class="logo_link"><span class="blind">투썸플레이스</span></a>
-    <a href="#" class="menu_link"><span class="blind">메뉴</span></a>
-    <nav class="hamburger_menu">
+    <a href="#" class="menu_link" onclick="openNav()"><span class="blind">메뉴</span></a>
+    <nav class="sidepanel">
+      <a href="#" class="closebtn" onclick="closeNav()">×</a>
       <a href="#">브랜드스토리</a>
       <a href="#">메뉴소개</a>
-      <a href="#">뉴스/이벤트</a>
+      <a href="#">매장안내</a>
+      <a href="#">투썸플레이스 APP</a>
+      <a href="#">뉴스 / 이벤트</a>
+      <a href="#">멤버십 / 제휴카드</a>
+      <a href="#">창업안내</a>
+      <a href="#">기업 및 단체 구매 안내</a>
     </nav>
+    <div class="sidepanel_dimmed"></div>
   </header>
   <main>
     <div class="event_menu">
@@ -44,12 +52,12 @@
           <div class="agree_box">
             <img src="./img/tit_agree.png" alt="" class="tit_agree">
             <div class="agree_select_box">
-              <input type="radio" name="agreeAll2" id="agreeAll_3" class="agree_radio">
-              <label for="agreeAll_3">
+              <input type="radio" name="agree" id="agreeAll" class="agree_radio">
+              <label for="agreeAll">
                 <img src="./img/agree_all1.png" alt="" class="agree_all">
               </label>
-              <input type="radio" name="agreeAll2" id="agreeAll_4" checked="checked" class="disagree_radio">
-              <label for="agreeAll_4">
+              <input type="radio" name="disagree" id="disagreeAll" checked="checked" class="disagree_radio">
+              <label for="disagreeAll">
                 <img src="./img/agree_all2.png" alt="" class="disagree_all">
               </label>
               <button type="button" name="button" class="btn_agree_view"><img src="./img/btn_agree_view.png" alt=""></button>
@@ -59,38 +67,49 @@
         <button type="button" name="button" class="btn_share"><img src="./img/event_btn.png" alt=""></button>
       </div>
     </div>
-    <div class="event_info">
-      <img src="./img/evt_info_m.png" alt="" class="event_info_detail"><br>
-      <img src="./img/txt_evt_caution4.png" alt="" class="event_info_caution">
+    <div class="event_info_wrap">
+      <div class="event_info"><span class="blind">자세한이벤트정보</span></div>
     </div>
     <div class="new_product_wrap">
       <div class="new_product_inner_wrap">
-        <button type="button" name="button" class="btn_cake"><img src="./img/event_btn_cake.png" alt=""></button>
-        <button type="button" name="button" class="btn_dessert"><img src="./img/event_btn_dessert.png" alt=""></button>
-        <button type="button" name="button" class="btn_drink"><img src="./img/event_btn_drink.png" alt=""></button>
+        <div class="new_product_btn_wrap">
+          <button type="button" name="button" class="btn_cake"><img src="./img/event_btn_cake.png" alt=""><span class="blind">홀케이크자세히보기</span></button>
+          <button type="button" name="button" class="btn_dessert"><img src="./img/event_btn_dessert.png" alt=""><span class="blind">디저트자세히보기</span></button>
+          <button type="button" name="button" class="btn_drink"><img src="./img/event_btn_drink.png" alt=""><span class="blind">음료자세히보기</span></button>
+        </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="floating_banner"><span class="blind">레트로유형뽑고선물받기</span></div>
-  <a href="#"><div class="btn_return_top"><span class="blind">TOP</span></div></a>
-  <div class="footer_wrap">
-    <div class="footer_top">
-      <ul>
-      <a href="#"><li>이용약관</li></a>
-      <a href="#"><li class="personal_info">개인정보처리방침</li></a>
-      <a href="#"><li>이메일 무단수집거부</li></a>
-      <a href="#"><li>법적고지</li></a>
-      </ul>
+    <a href="#"><div class="btn_return_top"><span class="blind">TOP</span></div></a>
+    <div class="footer_wrap">
+      <div class="footer_top">
+        <ul>
+          <a href="#"><li>이용약관</li></a>
+          <a href="#"><li class="personal_info">개인정보처리방침</li></a>
+          <a href="#"><li>이메일 무단수집거부</li></a>
+          <a href="#"><li>법적고지</li></a>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <address>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)</address>
+        <p>대표이사 : 이영상 고객센터 : 1577-4410 팩스 : (02)2058-6777</p>
+        <p>사업자등록번호 : 404-86-01054 개인정보보호책임자 : 장재호</p>
+        <p>대표이메일 : <a href="mailto:twosomemaster@cj.net" class="mail_link">twosomemaster@cj.net</a></p>
+        <p class="copyright">Copyright &copy; 2020 A TWOSOME PLACE ALL RIGHTS RESERVED.</p>
+      </div>
     </div>
-    <div class="footer_bottom">
-      <address>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)</address>
-      <p>대표이사 : 이영상 고객센터 : 1577-4410 팩스 : (02)2058-6777</p>
-      <p>사업자등록번호 : 404-86-01054 개인정보보호책임자 : 장재호</p>
-      <p>대표이메일 : <a href="mailto:twosomemaster@cj.net" class="mail_link">twosomemaster@cj.net</a></p>
-      <p class="copyright">Copyright &copy; 2020 A TWOSOME PLACE ALL RIGHTS RESERVED.</p>
-    </div>
-  </div>
   </footer>
 </body>
+<script>
+  function openNav() {
+    document.querySelector(".sidepanel").style.width = "300px";
+    document.querySelector(".sidepanel_dimmed").style.display = "block";
+  }
+  function closeNav() {
+    document.querySelector(".sidepanel").style.width = "0";
+    document.querySelector(".sidepanel_dimmed").style.display = "none"
+  }
+</script>
 </html>
