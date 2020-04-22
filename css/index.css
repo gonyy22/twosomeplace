@@ -166,27 +166,27 @@ a{
 		text-align: center;
 	}
 	.event_banner_background{
-		height: 1550px;
-		background: url("../img/event_bg_m.png") no-repeat;
+		height: 1500px;
+		background: url("../img/event_bg_mm.png") no-repeat;
 		background-position: 50%;
-		background-size: auto 1550px;
+		background-size: auto 1500px;
 		text-align: center;
 	}
 	.event_banner_text{
 		display: inline-block;
-		width: 400px;
-		height: 170px;
+		width: 300px;
+		height: 135px;
 		background: url("../img/tit_02_mm.png") no-repeat;
-		background-size: 400px;
+		background-size: 300px 135px;
 		text-align: center;
 		margin-top:30px;
 	}
 	.event_inner_banner{
 		position: relative;
-		width: 350px;
-		height: 1000px;
+		width: 290px;
+		height: 970px;
 		background: url("../img/event_cont_m.png") no-repeat;
-		background-size: 350px 1000px;
+		background-size: 290px 970px;
 		margin: 0 auto;
 	}
 	.new_product1_link{
@@ -229,21 +229,21 @@ a{
 	.agree_box{
 		display: inline-block;
 		position: absolute;
-		width:300px;
+		width:230px;
 		height: 100px;
 		background-color: #fcfbec;
-		bottom:140px;
-		left:23px;
+		bottom:100px;
+		left:30px;
 	}
 	.tit_agree{
 		display: inline-block;
-		width: 200px;
-		height: 14px;
+		width: 180px;
+		height: 12px;
 		float:left;
-		margin: 25px 0 0 20px;
+		margin: 20px 0 0 25px;
 	}
 	.agree_select_box{
-		margin-top:50px;
+		margin-top:37px;
 	}
 	input[type='radio']{
 		position: absolute;
@@ -256,10 +256,13 @@ a{
 	input[type='radio'] + label{
 		display: inline-block;
 		float:left;
-		margin: 4px 0 0 20px;
+		margin: 4px 0 0 27px;
 	}
 	input[type='radio']:checked + label:before{
+		width:15px;
+		height: 15px;
 		background: url('../img/agree_check_on.png');
+		background-size:15px;
 	}
 	.agree_all{
 		width:40px;
@@ -272,10 +275,10 @@ a{
 	}
 	input[type='radio'] + label:before{
 		display: inline-block;
-		width:20px;
-		height: 20px;
+		width:15px;
+		height: 15px;
 		background: url('../img/agree_check.png') no-repeat;
-		background-size:20px;
+		background-size:15px;
 		content:'';
 	}
 	.disagree_all{
@@ -288,26 +291,30 @@ a{
 		margin-left:50px;
 	}
 	.btn_agree_view{
-		width:60px;
-		height:25px;
+		width:55px;
+		height:23px;
 		border:none;
 		background-color: transparent;
 		padding:0;
 		cursor:pointer;
-		margin-top: 3px;
+		margin-top: 8px;
 	}
 	.btn_agree_view img{
-		width:65px;
-		height: 25px;
+		width:55px;
+		height: 23px;
 	}
 	.btn_share{
-		width:340px;
-		height:80px;
+		width:250px;
+		height:60px;
 		border:none;
 		background-color: transparent;
 		padding:0;
 		margin-top: 30px;
 		cursor: pointer;
+	}
+	.btn_share img{
+		width:250px;
+		height:60px;
 	}
 	.event_info{
 		width:100%;
@@ -317,15 +324,14 @@ a{
 	}
 	.event_info_detail{
 		display: inline-block;
-		width: 300px;
+		width: 320px;
 		height: 200px;
 		border-bottom: 1px solid #958c88;
-		margin-top:30px;
 	}
 	.event_info_caution{
 		width:300px;
 		height: 110px;
-		margin-top:20px;
+		margin-top:60px;
 	}
 	.new_product_wrap{
 		background-color: #fff9cf;
@@ -349,7 +355,7 @@ a{
 		margin:0;
 		cursor:pointer;
 		text-align: center;
-		margin-left: -80px;
+		margin-left: -90px;
 	}
 	.btn_cake img, .btn_dessert img, .btn_drink img{
 		width:190px;
@@ -365,7 +371,6 @@ a{
 		top:876px;
 	}
 	.footer_wrap{
-		width: 100%;
 		height: 240px;
 		background-color: #514A44;
 		text-align: center;
@@ -376,15 +381,16 @@ a{
 		text-align: center;
 	}
 	.footer_top ul{
-		width: 450px;
+		width: 320px;
 		height: 10px;
 		margin: 0 auto;
 	}
 	.footer_top ul li{
 		float:left;
 		color:#fff;
-		font-size: 12px;
-		margin-left:30px;
+		font-size: 10px;
+		margin: 0 auto;
+		margin-left:14px;
 	}
 	.footer_top .personal_info{
 		color: #FFA01E;
