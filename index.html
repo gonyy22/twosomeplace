@@ -5,16 +5,17 @@
   <meta name="viewport" content="width==device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
-  <title></title>
+  <link rel="stylesheet" href="/css/master.css">
+  <title>투썸플레이스</title>
 </head>
 <body>
   <header class="header_wrap">
     <div class="header_top_wrap">
       <a href="#" class="location_link"><span class="blind">위치</span></a>
-      <a href="#" class="logo_link"><span class="blind">투썸플레이스</span></a>
+      <h1><a href="#" class="logo_link"><span class="blind">투썸플레이스</span></a></h1>
       <ul class="event_menu_pc">
-        <li><a href="#retro_spring_event" class="event_menu_pc_retro"><img src="./img/navi_event_basic.png" alt=""></a></li>
-        <li><a href="#new_product" class="event_menu_pc_newproduct"><img src="./img/navi_event_basic2.png" alt=""></a></li>
+        <li><a href="#retro_spring_event" class="event_menu_pc_retro"><img src="./img/navi_event_basic.png" alt="봄날이온다이벤트"></a></li>
+        <li><a href="#new_product" class="event_menu_pc_newproduct"><img src="./img/navi_event_basic2.png" alt="봄신제품구경하기"></a></li>
       </ul>
       <a href="#" class="menu_link" onclick="openNav()"><span class="blind">메뉴</span></a>
     </div>
@@ -31,11 +32,11 @@
     </nav>
     <div class="sidepanel_dimmed"></div>
     <div class="event_menu">
-      <a href="#" class="spring_event">
+      <a href="#retro_spring_event" class="spring_event">
         <span class="event_menu_en">Retro Spring Event</span><br>
         <span class="event_menu_ko">봄날은 온다 이벤트</span>
       </a>
-      <a href="#" class="newproduct_event">
+      <a href="#new_product" class="newproduct_event">
         <span class="event_menu_en">What's NEW</span><br>
         <span class="event_menu_ko">봄 신제품 구경하기</span>
       </a>
@@ -43,8 +44,10 @@
   </header>
   <main>
     <div class="main_banner">
-      <div class="banner_text">
-        <span class="blind">새로운 봄의 감성을 투썸플레이스에서</span>
+      <div class="banner_text_wrap">
+        <div class="banner_text">
+          <h2><span class="blind">새로운 봄의 감성을 투썸플레이스에서</span></h2>
+        </div>
       </div>
       <div class="flower_wrap">
         <img src="./img/flower2.png" alt="" class="background_flower_1">
@@ -54,7 +57,7 @@
     <div id="retro_spring_event" class="event_banner">
       <div class="event_banner_background">
         <div class="event_banner_text">
-          <span class="blind">레트로 스프링 이벤트</span>
+          <h2><span class="blind">레트로 스프링 이벤트</span></h2>
         </div>
         <div class="event_inner_banner">
           <a href="#" class="new_product1_link"><div class="new_product_01"><span class="blind">유형1인절미형</span></div></a>
@@ -82,92 +85,58 @@
     </div>
     <div id="new_product" class="new_product_wrap">
       <div class="new_product_inner_wrap">
-        <img src="./img/tit_03.png" alt="투썸플레이스의 레트로 스프링 신제품" class="new_product_title">
+        <h2><img src="./img/tit_03.png" alt="투썸플레이스의 레트로 스프링 신제품" class="new_product_title"></h2>
         <div class="new_product_btn_wrap">
           <button type="button" name="button" class="btn_cake"><img src="./img/event_btn_cake.png" alt=""><span class="blind">홀케이크자세히보기</span></button>
           <button type="button" name="button" class="btn_dessert"><img src="./img/event_btn_dessert.png" alt=""><span class="blind">디저트자세히보기</span></button>
           <button type="button" name="button" class="btn_drink"><img src="./img/event_btn_drink.png" alt=""><span class="blind">음료자세히보기</span></button>
         </div>
-        <div class="new_product_img_pad">
-          <img src="./img/product_768.png" alt="">
+        <div class="new_product_img_tablet">
+          <img src="./img/product_tablet.png" alt="레트로스프링신제품">
         </div>
         <div class="new_product_slide">
-          <img src="./img/product_011.png" alt="" class="new_product_slide_img">
-          <img src="./img/product_022.png" alt="" class="new_product_slide_img">
-          <img src="./img/product_033.png" alt="" class="new_product_slide_img">
-          <img src="./img/product_044.png" alt="" class="new_product_slide_img">
-          <img src="./img/product_055.png" alt="" class="new_product_slide_img">
-          <img src="./img/product_066.png" alt="" class="new_product_slide_img">
+          <img src="./img/product_pc_01.png" alt="쑥라떼" class="new_product_slide_img">
+          <img src="./img/product_pc_02.png" alt="인절미클라우드생크림" class="new_product_slide_img">
+          <img src="./img/product_pc_03.png" alt="흑임자카페라떼" class="new_product_slide_img">
+          <img src="./img/product_pc_04.png" alt="흑임자튀일생크림" class="new_product_slide_img">
+          <img src="./img/product_pc_05.png" alt="인절미클라우드생크림피스" class="new_product_slide_img">
+          <img src="./img/product_pc_06.png" alt="흑임자튀일생크림피스" class="new_product_slide_img">
 
-          <button type="button" name="button" class="slide_btn_left" onclick="plusDivs(-1)"><img src="./img/btn_prev.png" alt=""></button>
-          <button type="button" name="button" class="slide_btn_right"  onclick="plusDivs(1)"><img src="./img/btn_next.png" alt=""></button>
+          <button type="button" name="button" class="slide_btn_left" onclick="plusDivs(-1)"><img src="./img/btn_prev.png" alt=""><span class="blind">이전제품보기</span></button>
+          <button type="button" name="button" class="slide_btn_right"  onclick="plusDivs(1)"><img src="./img/btn_next.png" alt=""><span class="blind">다음제품보기</span></button>
 
         </div>
         <div class="retro_spring_btn">
-          <button type="button" name="button"><img src="./img/new_btn.png" alt=""></button>
+          <button type="button" name="button"><img src="./img/new_btn.png" alt=""><span class="blind">레트로스프링자세히보기</span></button>
         </div>
       </div>
     </div>
   </main>
   <footer>
-  
       <div class="floating_banner"><span class="blind">레트로유형뽑고선물받기</span><a href="#" class="floating_banner_link" onclick="setTimeout('nextWin()', 500)"></a><button type="button" name="button" class="btn_closePopup" onclick="closePopup()"></button></div>
-
       <a href="#"><div class="btn_return_top"><span class="blind">TOP</span></div></a>
       <div class="footer_wrap">
         <div class="footer_top">
           <ul>
-            <a href="#"><li>이용약관</li></a>
-            <a href="#"><li class="personal_info">개인정보처리방침</li></a>
-            <a href="#"><li>이메일 무단수집거부</li></a>
-            <a href="#"><li>법적고지</li></a>
+            <li><a href="#"><img src="./img/txt_footer01.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/txt_footer02.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/txt_footer03.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/txt_footer04.png" alt=""></a></li>
           </ul>
         </div>
         <div class="footer_bottom">
-          <address>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)</address>
-          <p>대표이사 : 이영상 고객센터 : 1577-4410 팩스 : (02)2058-6777</p>
-          <p>사업자등록번호 : 404-86-01054 개인정보보호책임자 : 장재호</p>
-          <p>대표이메일 : <a href="mailto:twosomemaster@cj.net" class="mail_link">twosomemaster@cj.net</a></p>
-          <p class="copyright">Copyright &copy; 2020 A TWOSOME PLACE ALL RIGHTS RESERVED.</p>
+          <img src="./img/txt_footer05.png" alt="">
+          <span class="blind">서울특별시 중구 을지로 170 8층 투썸플레이스주</span>
+          <span class="blind">대표이사 이영상</span>
+          <span class="blind">고객센터 15774410</span>
+          <span class="blind">팩스 0220586777</span>
+          <span class="blind">사업자등록번호 4048601054</span>
+          <span class="blind">개인정보보호책임자 장재호</span>
+          <span class="blind">대표이메일 twosomemaster@cj.net</span>
+          <a href="mailto:twosomemaster@cj.net" class="mail_link"></a>
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
-
-  <script type="text/javascript">
-  function openNav() {
-    document.querySelector(".sidepanel").style.width = "300px";
-    document.querySelector(".sidepanel_dimmed").style.display = "block";
-  }
-
-  function closeNav() {
-    document.querySelector(".sidepanel").style.width = "0";
-    document.querySelector(".sidepanel_dimmed").style.display = "none"
-  }
-
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.querySelectorAll(".new_product_slide_img");
-    if (n > x.length) {slideIndex = 1} //마지막 슬라이드일 때 처음으로 돌아가기 ">"
-    if (n < 1) {slideIndex = x.length} //처음이면 마지막 슬라이드로 "<"
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "inline-block";
-  }
-
-  function nextWin()
-  {location = "https://www.twosome.co.kr:7009/main.asp"}
-
-  function closePopup() {
-    document.querySelector(".floating_banner").style.display = "none";
-  }
-</script>
 </html>
