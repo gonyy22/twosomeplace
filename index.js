@@ -18,16 +18,16 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.querySelectorAll(".new_product_slide_img");
-  if (n > x.length) {slideIndex = 1} //마지막 슬라이드일 때 처음으로 돌아가기 ">"
-  if (n < 1) {slideIndex = x.length} //처음이면 마지막 슬라이드로 "<"
+  if (n > x.length) {slideIndex = 1} //">"
+  if (n < 1) {slideIndex = x.length} //"<"
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; //니머지 사진은 다 display:none
+    x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "inline-block";
   }
 
 function nextWin(){
-  location = "https://www.twosome.co.kr:7009/main.asp";
+  location = "https://www.google.com";
 }
 
 function closePopup() {
